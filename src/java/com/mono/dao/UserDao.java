@@ -1,8 +1,9 @@
 
 package com.mono.dao;
 
-import com.mono.entity.Users; 
+import com.mono.entity.Users;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -10,6 +11,8 @@ import java.util.List;
  */
 public interface UserDao {
     
+    public List<Map<String, Object>> findUserAccount() throws Exception;
     
+    public List<Users> findUsersAccount() throws Exception;
     
 }

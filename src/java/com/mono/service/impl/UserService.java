@@ -5,6 +5,7 @@ import com.mono.entity.Users;
 import com.mono.service.BaseInterface;
 import com.mono.service.UserInterface;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -46,6 +47,18 @@ public class UserService implements BaseInterface<Users, Integer>, UserInterface
     @Override
     public int delete(Users o) throws Exception {
         return userDaoImpl.delete(o);
+    }
+
+    @Override
+    public List<Map<String, Object>> findUserAccount() throws Exception {
+        
+        return userDaoImpl.findUserAccount();
+    }
+
+    @Override
+    public List<Users> findUsersAccount() throws Exception {
+        
+        return userDaoImpl.findUsersAccount();
     }
 
 }

@@ -5,7 +5,7 @@ package com.mono.entity;
  *
  * @author prongbang
  */
-public class Users {
+public class Users extends Account{
     
     private Integer id;
     private String name;
